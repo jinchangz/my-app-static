@@ -20,16 +20,14 @@ const IndexPage: NextPage<PostDataListProps> = ({
   return (
     <main>
       <Head>
-        <title>Home page</title>
+        <title>２ちゃんねるまとめるまとめ</title>
       </Head>
 
-      <h1>List of posts</h1>
+      <h1>お当サイトを今まで利用していただいた皆様へのお知らせ</h1>
+      <div>２ちゃんねるまとめるまとめの運営を継続していただける方にサイトの譲渡いたしますので<br />
+        サイトが再開されるまで今しばらくお待ちください。<br />
+        2週間から1か月以内に再開する予定にまります。</div>
 
-      <section>
-        {postDataList.map((post: PostData) => (
-          <Post {...post} key={post.id} />
-        ))}
-      </section>
     </main>
   )
 }
